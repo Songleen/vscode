@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue启动项目</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+    <div id="e1">
+        <div v-for='site in sites'>
+            {{site}}
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#e1',
+            data:{
+                sites:[
+                    {name: 'Round'},
+                    {name: 'Google'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
